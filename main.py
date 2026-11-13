@@ -24,7 +24,7 @@ def at(q,w):
  return 0
 def ev():
  s=sum(M[abs(p)]*(1 if p>0 else -1)for p in B if p)+30*(B.count(3)//2-B.count(-3)//2)
- return s if S>0 else -s
+ return(s if S>0 else -s)+10
 def pm(f,t):
  return [f|t<<7|p<<14 for p in(5,4,3,2)]if(t>>4)==(7 if S>0 else 0)else[f|t<<7]
 def gn(co=0):
